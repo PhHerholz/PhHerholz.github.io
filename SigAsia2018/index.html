@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Factor Once: Reusing Cholesky Factorizations on Sub-Meshes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    
+<!--    <link rel="stylesheet" href="styles/main.css">-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/custom1.css">
+    <link rel="stylesheet" href="styles/skeleton.css">
+<!--    <link rel="stylesheet" href="styles/github-prettify-theme.css">-->
+
+    <!-- endbuild -->
+
+		  
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62200484-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62200484-2');
+</script>
+
+
+
+	  
+</head>
+  <body>
+	  
+
+	  
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+	  
+  <div class="container">
+    <section class="header" id="intro">
+      <h2 class="title">Factor Once: Reusing Cholesky <br> Factorizations on Sub-Meshes</h2>
+		<h4 class="authors"> 
+			Philipp Herholz <span style="display:inline-block; width: 50pt;"></span> 
+			Marc Alexa	<br> <br>
+			TU Berlin <span style="display:inline-block; width: 70pt;"></span> TU Berlin <br>
+		</h4> 
+		<br>
+	<img class="u-max-60-width" src="images/teaser.jpg"> <hr>
+		
+	<div class="abstractbox">
+		<div class="abstract"><span>Abstract</span>
+A common operation in geometry processing is solving symmetric and positive semi-definite systems on a subset of a mesh with conditions for the vertices at the boundary of the region.
+This is commonly done by setting up the linear system for the sub-mesh, factorizing the system (potentially applying preordering to improve sparseness of the factors), 
+and then solving by back-substitution. This approach suffers from a comparably high setup cost for each local operation.
+We propose to reuse factorizations defined on the full mesh to solve linear problems on sub-meshes.
+We show how an update on sparse matrices can be performed in a particularly efficient way to obtain the factorization of the operator on a sun-mesh significantly outperforming general factor updates and complete refactorization. 
+We analyze the resulting speedup for a variety of situations and demonstrate that our method outperforms factorization of a new matrix by a factor of up to 10 while never being slower in our experiments.</div></div>
+    </section>
+
+<hr>
+<div class="results">  
+	<span>Preprint (12MB)</span>  
+	<a href="files/HerholzSigAsia2018.pdf">
+		<img src="images/pdficon.png" align="center"> <br>
+		<img class="u-max-40-width" src="../figures/sigAsia2018.jpg" align="center"> 
+	</a>
+</div>	
+<hr>
+
+<div class="results">  
+	<span>Slides</span>  
+	<p> 
+		<a href=""><img src="images/pdficon.png" height="32" width="32" align="center"></a> 
+		(?? MB)
+	</p>
+</div>	
+<hr>  
+<div class="results">  
+	<span>Code</span>  
+	<p> 
+		<a href=""><img src="images/c-logo.png" height="32" width="32" align="center"></a> 
+		(?? MB)
+	</p>
+</div>	
+<hr> 
+		  
+<div class="bibtex">
+@Article{Herholz:2018:cup,
+	journal = {ACM Transaction on Graphics (Proc. of Siggraph Asia)},
+	title = {{Factor Once: Reusing Cholesky Factorizations on Sub-Meshes}},
+	author = {Philipp Herholz and Marc Alexa},
+	pages = {9},
+	volume= {37},
+	number= {6},
+	year = {2018},
+	DOI = {https://doi.org/10.1145/3272127.3275107},
+}
+
+ </div>
+	  
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!--        <script src="scripts/app.js"></script>-->
+<!--        <script src="scripts/controllers/main.js"></script>-->
+        <!-- endbuild -->
+</body>
+</html>

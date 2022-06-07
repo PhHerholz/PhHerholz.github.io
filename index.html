@@ -1,3 +1,624 @@
-<html>
-Hallo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62200484-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-62200484-3');
+</script>
+
+<meta charset="utf-8">
+<title>Philipp Herholz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Philipp Herholz">
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style>
+body {
+padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+  
+  <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+              <li class="active"><a href="#about">About</a></li>
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#professional">Professional Activity</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+  
+<div class="container">
+
+<div class="row">
+<div class="span12">
+<div class="page-header">
+<h1 id="about">Philipp Herholz</h1>
+</div>
+</div>
+</div>
+
+<div class="row">
+
+<div class="span2">
+<img src="figures/phil.jpg" alt=""/>
+</div>
+
+<div class="span10">
+
+  	<p> 
+      I am a research scientist at Meta's Reality Labs Research. Previously I was a postdoctoral researcher in <a href="https://igl.ethz.ch/people/sorkine">Prof. Olga Sorkine-Hornung's</a> <a href="https://igl.ethz.ch">Interactive Geometry Lab</a>. 
+      My PhD supervisor was <a href="https://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Prof. Marc Alexa</a> at TU Berlin. 
+    </p>   
+    
+    <p>
+        My research interests span geometry processing, computational fabrication and sparse linear solvers.
+    </p>
+
+
+<!--<p>Contact: m.eitz at tu-berlin dot de</p>-->
+</div> <!-- span9 -->
+</div> <!-- row -->
+	
+<hr/>
+
+
+
+<hr/>
+
+<div class="row">
+<div class="span12">
+<h2 id="publications">Publications</h2>
+
+<h3>2022</h3>
+
+
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/Sig2022a.jpg" alt="Sparsity-Specific Code Optimization using Expression Trees"/>
+</div>
+
+<div class="span9">
+<h4>Sparsity-Specific Code Optimization using Expression Trees <small>SIGGRAPH 2022 (TOG)</small></h4>
+<p>
+Philipp Herholz,
+<a href="https://tangxuan.me">Xuan Tang,</a>
+<a href="https://web.uvic.ca/~teseo/">Teseo Schneider,</a>
+<a href="https://research.adobe.com/person/shoaib-kamil/">Shoaib Kamil,</a>
+<a href="https://cims.nyu.edu/gcl/daniele.html">Daniele Panozzo,</a>
+<a href="https://research.adobe.com/person/shoaib-kamil/">Shoaib Kamil,</a>
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
+
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/sscoet/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/sscoet/sscoet_main.pdf"
+">PDF</a>
+<i class="icon-wrench"></i><a href="https://github.com/PhHerholz/SymbolicLib">Code</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholz2022">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+We introduce a code generator that converts unoptimized C++ code operating
+on sparse data into vectorized and parallel CPU or GPU kernels.
+Our approach unrolls the computation into a massive expression graph,
+performs redundant expression elimination, grouping, and then generates
+an architecture-specific kernel to solve the same problem, assuming that
+the sparsity pattern is fixed, which is a common scenario in many applications
+in computer graphics and scientific computing. We show that our
+approach scales to large problems and can achieve speedups of two orders
+of magnitude on CPUs and three orders of magnitude on GPUs, compared
+to a set of manually optimized CPU baselines. To demonstrate the practical
+applicability of our approach, we employ it to optimize popular algorithms
+with applications to physical simulation and interactive mesh deformation.</p>  
+</div>       
+</div> 
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/Sig2022b.jpg" alt="Variational Quadratic Shape Functions for Polygons and Polyhedra"/>
+</div>
+
+<div class="span9">
+<h4>Variational Quadratic Shape Functions for Polygons and Polyhedra <small>SIGGRAPH 2022</small></h4>
+<p>
+<a href="https://ls7-gv.cs.tu-dortmund.de/people/bunge_astrid/bunge_astrid.html">Astrid Bunge</a>, 
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung,</a>
+<a href="https://ls7-gv.cs.tu-dortmund.de/people/botsch_mario/botsch_mario.html">Mario Botsch,</a>
+<a href="http://www.cs.jhu.edu/~misha/">Misha Kazhdan</a> 
+
+<br/>
+<i class="icon-home"></i><a href="https://ls7-gv.cs.tu-dortmund.de/people/bunge_astrid/bunge_astrid.html">Project page</a>
+<i class="icon-book"></i><a href="https://ls7-gv.cs.tu-dortmund.de/downloads/publications/2022/sig22.pdf
+">PDF</a>
+<i class="icon-wrench"></i><a href="https://github.com/mkazhdan/VariationalPolyShapeFunctions/">Code</a>
+<i class="icon-bold"></i><a href="bibtex.html#Bunge2022">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+Solving partial differential equations (PDEs) on geometric domains is an important component of computer graphics, geometry processing, and many other fields. Typically, the given discrete mesh is the geometric representation and should not be altered for simulation purposes. Hence, accurately solving PDEs on general meshes is a central goal and has been considered for various differential operators over the last years. While it is known that using higher-order basis functions on simplicial meshes can substantially improve accuracy and convergence, extending these benefits to general surface or volume tessellations in an efficient fashion remains an open problem. Our work proposes variationally optimized piecewise quadratic shape functions for polygons and polyhedra, which generalize quadratic P2 elements, exactly reproduce them on simplices, and inherit their beneficial numerical properties. To mitigate the associated cost of increased computation time, particularly for volumetric meshes, we introduce a custom two-level multigrid solver which significantly improves computational performance.</p>  
+</div>       
+</div> 
+
+
+
+
+<h3>2021</h3>
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SGP2021.jpg" alt="Developable Approximation via Gauss Image Thinning"/>
+</div>
+
+<div class="span9">
+<h4>Developable Approximation via Gauss Image Thinning <small>SGP 2021</small></h4>
+<p>
+<a href="https://igl.ethz.ch/people/">Alexandre Binninger</a>, 
+<a href="https://floorverhoeven.github.io">Floor Verhoeven</a>,
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> 
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/gauss-thinning/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/gauss-thinning/GaussThinning_Paper.pdf">PDF</a>
+<i class="icon-film"></i><a href="https://youtu.be/k0RVs_FKYd4">Video</a>
+<i class="icon-bold"></i><a href="bibtex.html#Binninger2021">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+Approximating 3D shapes with piecewise developable surfaces is an active research topic, driven by the benefits of developable geometry in fabrication. Piecewise developable surfaces are characterized by having a Gauss image that is a 1D object -- a collection of curves on the Gauss sphere. We present a method for developable approximation that makes use of this classic definition from differential geometry. Our algorithm is an iterative process that alternates between thinning the Gauss image of the surface and deforming the surface itself to make its normals comply with the Gauss image. The simple, local-global structure of our algorithm makes it easy to implement and optimize. We validate our method on developable shapes with added noise and demonstrate its effectiveness on a variety of non-developable inputs. Compared to the state of the art, our method is more general, tessellation independent, and preserves the input mesh connectivity.</p>  
+</div>       
+</div> 
+
+
+<h3>2020</h3>
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SigAsia2020a.jpg" alt="Shape Approximation by Developable Wrapping"/>
+</div>
+
+<div class="span9">
+<h4>Sparse Cholesky Updates for Interactive Mesh Parameterization <small>Siggraph Asia 2020</small></h4>
+<p>
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> 
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/sparse-cholesky-update/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/sparse-cholesky-update/sparse-cholesky-update-paper.pdf">PDF</a>
+<i class="icon-film"></i><a href="https://youtu.be/_l0UFv75t_A">Video</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholzparam">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+We present a novel linear solver for interactive parameterization tasks. Our method is based on the observation that quasi-conformal parameterizations of a triangle mesh are largely determined by boundary conditions. These boundary conditions are typically constructed interactively by users, who have to take several artistic and geometric constraints into account while introducing cuts on the geometry. Commonly, the main computational burden in these methods is solving a linear system every time new boundary conditions are imposed. The core of our solver is a novel approach to efficiently update the Cholesky factorization of the linear system to reflect new boundary conditions, thereby enabling a seamless and interactive workflow even for large meshes consisting of several millions of vertices.</p>  
+</div>       
+</div> 
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SigAsia2020b.jpg" alt="Shape Approximation by Developable Wrapping"/>
+</div>
+
+<div class="span9">
+<h4>Shape Approximation by Developable Wrapping <small>Siggraph Asia 2020</small></h4>
+<p>
+<a href="http://alexandraion.com">Alexandra Ion,</a> 
+<a href="https://michaelrabinovich.github.io">Michael Rabinovich,</a> 
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> 
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/developable-wrapping/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/developable-wrapping/developable-wrapping-paper.pdf">PDF</a>
+<i class="icon-film"></i><a href="https://youtu.be/1o6kR8viaow">Video</a>
+<i class="icon-bold"></i><a href="bibtex.html#Iondev">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+We present an automatic tool to approximate curved geometries with piecewise developable surfaces. At the center of our work is an algorithm that wraps a given 3D input surface with multiple developable patches, each modeled as a discrete orthogonal geodesic net. Our algorithm features a global optimization routine for effectively finding the placement of the developable patches. After wrapping the mesh, we use these patches and a non-linear projection step to generate a surface that approximates the original input, but is also amendable to simple and efficient fabrication techniques thanks to being piecewise developable. Our algorithm allows users to steer the tradeoff between approximation power and the number of developable patches used. We demonstrate the effectiveness of our approach on a range of 3D shapes. Compared to previous approaches, our results exhibit a smaller or comparable error with fewer patches to fabricate.</p>  
+</div>       
+</div> 
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/sgp2020.png" alt="Properties of Laplace Operators for Tetrahedral Meshes"/>
+</div>
+
+<div class="span9">
+<h4>Properties of Laplace Operators for Tetrahedral Meshes <small>SGP 2020</small></h4>
+<p>
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa,</a> 
+Philipp Herholz, Maximilian Kohlbrenner
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> 
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/LB3D/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/LB3D/LB3D.pdf">PDF</a>
+<i class="icon-download"></i><a href="https://igl.ethz.ch/projects/LB3D/talk-sgp2020.pdf">Slides</a>
+<i class="icon-film"></i><a href="https://youtu.be/YGrhHMrCaUY">Talk</a>
+<i class="icon-wrench"></i><a href="https://igl.ethz.ch/projects/LB3D/dualLaplace.cpp">Code</a>
+<i class="icon-bold"></i><a href="bibtex.html#Alexaplotm">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+Discrete Laplacians for triangle meshes are a fundamental tool in geometry processing. The so-called cotan Laplacian is widely used since it preserves several important properties of its smooth counterpart. It can be derived from different principles: either considering the piecewise linear nature of the primal elements or associating values to the dual vertices. Both approaches lead to the same operator in the two-dimensional setting. In contrast, for tetrahedral meshes, only the primal construction is reminiscent of the cotan weights, involving dihedral angles. We provide explicit formulas for the lesser-known dual construction. In both cases, the weights can be computed by adding the contributions of individual tetrahedra to an edge. The resulting two different discrete Laplacians for tetrahedral meshes only retain some of the properties of their two-dimensional counterpart. In particular, while both constructions have linear precision, only the primal construction is positive semi-definite and only the dual construction generates positive weights and provides a maximum principle for Delaunay meshes. We perform a range of numerical experiments that highlight the benefits and limitations of the two constructions for different problems and meshes.</p>  
+</div>       
+</div> 
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/eg2020.jpg" alt="Polygon Laplacian Made Simple"/>
+</div>
+
+<div class="span9">
+<h4>Polygon Laplacian Made Simple <small>Eurographics 2020</small></h4>
+<p>
+<a href="https://ls7-gv.cs.tu-dortmund.de/people/bunge_astrid/bunge_astrid.html">Astrid Bunge,</a>
+Philipp Herholz, 
+<a href="http://www.cs.jhu.edu/~misha/">Misha Kazhdan,</a>
+<a href="https://ls7-gv.cs.tu-dortmund.de/people/botsch_mario/botsch_mario.html">Mario Botsch</a> 
+<br/>
+
+<i class="icon-book"></i><a href="./EG2020/eg20.pdf">PDF</a>
+<!--<i class="icon-download"></i><a href="">Slides</a>-->
+<i class="icon-bold"></i><a href="bibtex.html#Bungplms">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+The discrete Laplace-Beltrami operator for surface meshes is a fundamental building block for many (if not most) geometry processing algorithms. While Laplacians on triangle meshes have been researched intensively, yielding the cotangent discretization as the de-facto standard, the case of general polygon meshes has received much less attention. We present a discretization of the Laplace operator which is consistent with its expression as the composition of divergence and gradient operators, and is applicable to general polygon meshes, including meshes with non-convex, and even non-planar, faces. By virtually inserting a carefully placed point we implicitly refine each polygon into a triangle fan, but then hide the refinement within the matrix assembly. The resulting operator generalizes the cotangent Laplacian, inherits its advantages, and is empirically shown to be on par or even better than the recent polygon Laplacian of Alexa and Wardetzky --- while being simpler to compute.</p>  
+</div>       
+</div> 
+
+
+
+
+<h3>2019</h3>
+
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/vmv2019.jpg" alt="Reﬂection Symmetry in Textured Sewing Patterns"/>
+</div>
+
+<div class="span9">
+<h4>Reﬂection Symmetry in Textured Sewing Patterns <small>VMV 2019</small></h4>
+<p>
+<a href="https://n.ethz.ch/~wolffk/">Katja Wolff,</a>
+Philipp Herholz, 
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a> 
+<br/>
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/reflection-symmetry-sewing/">Project page</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/reflection-symmetry-sewing/sym_wallpaper_patter.pdf">PDF</a>
+<!--<i class="icon-download"></i><a href="">Slides</a>-->
+<i class="icon-bold"></i><a href="https://igl.ethz.ch/publications/igl-bibtex.php#Wolff:RSiTSP:2019">BibTeX</a>
+<!--<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>-->
+</p>
+<p>
+Recent work in the area of digital fabrication of clothes focuses on repetitive print patterns, specifically the 17 wallpaper groups, and their alignment along garment seams. While adjusting the underlying sewing patterns for maximized fit of wallpapers along seams, past research does not account for global symmetries that underlie almost every sewing pattern due to the symmetry of the human body. We propose an interactive tool to define such symmetries and integrate them into the existing algorithm, such that both the texture alignment and the deformation of the sewing pattern adhere to these symmetries.
+</p>  
+</div>       
+</div> 
+
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/eg2019.jpg" alt="Efficient Computation of Smoothed Exponential Maps"/>
+</div>
+
+<div class="span9">
+<h4>Efficient Computation of Smoothed Exponential Maps <small>Eurographics 2019 (CGF paper)</small></h4>
+<p>Philipp Herholz, 
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<!-- <i class="icon-home"></i><a href="./EG2019/index.html">Project page</a> -->
+<i class="icon-book"></i><a href="./EG2019/files/HerholzEG2019.pdf">PDF</a>
+<i class="icon-download"></i><a href="./EG2019/files/EG2019Slides.pdf">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholzhem">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a>
+</p>
+<p>
+Many applications in geometry processing require the computation of local parameterizations on a surface mesh at interactive rates. A popular approach is to compute local exponential maps, i.e. parameterizations that preserve distance and angle to the origin of the map. We extend the computation of geodesic distance by heat diffusion to also determine angular information for the geodesic curves. This approach has two important benefits compared to fast approximate as well as exact forward tracing of the distance function: First, it allows generating smoother maps, avoiding discontinuities. Second, exploiting the factorization of the global Laplace–Beltrami operator of the mesh and using recent localized solution techniques, the computation is more efficient even compared to fast approximate solutions based on Dijkstra's algorithm.
+</p>  
+</div>       
+</div>  
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/chi2019.jpg" alt="Understanding Metamaterial Mechanisms"/>
+</div>
+
+<div class="span9">
+<h4>Understanding Metamaterial Mechanisms <small>CHI 2019</small></h4>
+<p>
+<a href="http://alexandraion.com">Alexandra Ion,</a> 
+<a href="http://www.davidlindlbauer.com">David Lindlbauer,</a> 
+Philipp Herholz, 
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa,</a> 
+<a href="https://hpi.de/das-hpi/personen/professoren/prof-dr-patrick-baudisch.html">Patrick Baudisch</a> 
+<br/>
+<!-- <i class="icon-home"></i><a href="./EG2019/index.html">Project page</a> -->
+<i class="icon-book"></i><a href="http://alexandraion.com/wp-content/uploads/2019CHI_Understanding_Metamaterial_Mechanisms.pdf">PDF</a>
+<i class="icon-download"></i><a href="">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#Ionumm">BibTeX</a>
+<!-- <i class="icon-chevron-right"></i><a href="https://doi.org/10.1111/cgf.13607">DOI</a> -->
+</p>
+<p>
+In this paper, we establish the underlying foundations of mechanisms that are composed of cell structures - known as metamaterial mechanisms. Such metamaterial mechanisms were previously shown to implement complete mechanisms in the cell structure of a 3D printed material, without the need for assembly. However, their design is highly challenging. A mechanism consists of many cells that are interconnected and impose constraints on each other. This leads to unobvious and non-linear behavior of the mechanism, which impedes user design. In this work, we investigate the underlying topological constraints of such cell structures and their influence on the resulting mechanism. Based on these findings, we contribute a computational design tool that automatically creates a metamaterial mechanism from user-defined motion paths. This tool is only feasible because our novel abstract representation of the global constraints highly reduces the search space of possible cell arrangements.
+</p>  
+</div>       
+</div>  
+
+<h3>2018</h3>
+    
+ <div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/sigAsia2018.jpg" alt="Factor Once: Reusing Cholesky Factorizations on Sub-Meshes"/>
+</div>
+
+<div class="span9">
+<h4>Factor Once: Reusing Cholesky Factorizations on Sub-Meshes <small>SIGGRAPH ASIA 2018</small></h4>
+<p>Philipp Herholz, 
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<i class="icon-home"></i><a href="./SigAsia2018/index.html">Project page</a>
+<i class="icon-book"></i><a href="./SigAsia2018/files/HerholzSigAsia2018.pdf">PDF</a>
+<i class="icon-download"></i><a href="">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholzcup">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/3272127.3275107">DOI</a>
+</p>
+<p>
+A common operation in geometry processing is solving symmetric and positive semi-definite systems on a subset of a mesh with conditions for the vertices at the boundary of the region. This is commonly done by setting up the linear system for the sub-mesh, factorizing the system (potentially applying preordering to improve sparseness of the factors), and then solving by back-substitution. This approach suffers from a comparably high setup cost for each local operation. We propose to reuse factorizations defined on the full mesh to solve linear problems on sub-meshes. We show how an update on sparse matrices can be performed in a particularly efficient way to obtain the factorization of the operator on a sun-mesh significantly outperforming general factor updates and complete refactorization. We analyze the resulting speedup for a variety of situations and demonstrate that our method outperforms factorization of a new matrix by a factor of up to 10 while never being slower in our experiments.
+    </p>  
+</div>       
+    </div>    
+    
+  <div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/chi2018.jpg" alt="Optispace"/>
+</div>
+    
+<div class="span9">
+<h4>OptiSpace: Automated Placement of Interactive 3D Projection Mapping Content
+ <small>Conference on Human Factors in Computing Systems (CHI) 2018</small></h4>
+<p class="pull-left">
+    Andreas Fender,
+    Philipp Herholz, 
+    <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> and
+    <a href="http://joergmueller.info">Joerg Mueller</a> 
+<br/>
+<i class="icon-film"></i><a href="https://youtu.be/Z74Zfyz_mP4">Movie</a>    
+<i class="icon-bold"></i><a href="bibtex.html#FenderOPT">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/3173574.3173843">DOI</a>
+</p>
+<p style="clear:both">
+We present OptiSpace, a system for the automated placement of perspectively corrected projection mapping content. We analyze the geometry of physical surfaces and the viewing behavior of users over time using depth cameras. Our system measures user view behavior and simulates a virtual projection mapping scene users would see if content were placed in a particular way. OptiSpace evaluates the simulated scene according to perceptual criteria, including visibility and visual quality of virtual content. Finally, based on these evaluations, it optimizes content placement, using a two-phase procedure involving adaptive sampling and the covariance matrix adaptation algorithm. With our proposed architecture, projection mapping applications are developed without any knowledge of the physical layouts of the target environments. Applications can be deployed in different uncontrolled environments, such as living rooms and office spaces.
+</div> <!-- span9 -->
+</div> <!-- row -->    
+
+<h3>2017</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/sigAsia.jpg" alt="Localized solutions of sparse linear systems for geometry processing"/>
+</div>
+
+<div class="span9">
+<h4>Localized solutions of sparse linear systems for geometry processing <small>SIGGRAPH ASIA 2017</small></h4>
+<p>Philipp Herholz, 
+<a href="http://faculty.cse.tamu.edu/davis/welcome.html">Timothy A. Davis</a> and
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SigAsia2017/">Project page</a>
+<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SigAsia2017/files/HerholzSigAsia2017.pdf">PDF</a>
+<i class="icon-download"></i><a href="">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholzlgp">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/3130800.3130849">DOI</a>
+</p>
+<p>
+Computing solutions to linear systems is a fundamental building block of many geometry processing algorithms. In many cases the Cholesky factorization of the system matrix is computed to subsequently solve the system, possibly for many right-hand sides, using forward and back substitution. We demonstrate how to exploit sparsity in both the right-hand side and the set of desired solution values to obtain significant speedups. The method is easy to implement and potentially useful in any scenarios where linear problems have to be solved locally. We show that this technique is useful for geometry processing operations, in particular we consider the solution of diffusion problems. All problems profit significantly from sparse computations in terms of runtime, which we demonstrate by providing timings for a set of numerical experiments. 
+    </p>  
+</div>       
+    </div>    
+    
+  <div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/uist2017.jpg" alt="Unsharp Masking Geometry Improves 3D Prints"/>
+</div>
+    
+<div class="span9">
+<h4>HeatSpace: Automatic Placement of Displays by Empirical Analysis of User Behavior
+ <small>ACM Symposium on User Interface Software and Technology (UIST) 2017</small></h4>
+<p class="pull-left">
+	Andreas Fender,
+   	<a href="http://www.davidlindlbauer.com">David Lindlbauer</a>, 
+    Philipp Herholz, 
+    <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> and
+    <a href="http://joergmueller.info">Joerg Mueller</a> 
+<br/>
+<i class="icon-film"></i><a href=" https://youtu.be/pSZHUseWtj4">Movie</a>    
+<i class="icon-bold"></i><a href="bibtex.html#FenderHAP">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/3126594.3126621">DOI</a>
+</p>
+<p style="clear:both">
+We present HeatSpace, a system that records and empirically analyzes user behavior in a space and automatically suggests positions and sizes for new displays. The system uses depth cameras to capture 3D geometry and users’ perspectives over time. To derive possible display placements, it calculates volumetric heatmaps describing geometric persistence and planarity of structures inside the space. It evaluates visibility of display poses by calculating a volumetric heatmap describing occlusions, position within users’ field of view, and viewing angle. Optimal display size is calculated through a heatmap of average viewing distance. Based on the heatmaps and user constraints we sample the space of valid display placements and jointly optimize their positions. This can be useful when installing displays in multi-display environments such as meeting rooms, offices, and train stations.  </p>
+</div> <!-- span9 -->
+</div> <!-- row -->    
+    
+    
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/smi2017.jpg" alt="Unsharp Masking Geometry Improves 3D Prints"/>
+</div>
+<div class="span9">
+<h4>Unsharp Masking Geometry Improves 3D Prints <small> Shape Modeling International (SMI) 2017</small></h4>
+<p class="pull-left">
+    Philipp Herholz, <a href="http://www.cg.tu-berlin.de/team/Sebastian-Koch/">Sebastian Koch</a>, 
+    <a href="http://perso.telecom-paristech.fr/~boubek/">Tamy Boubekeur</a> and
+    <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<i class="icon-home"></i><a href="http://perso.telecom-paristech.fr/~boubek/papers/UnsharpMasking3DPrinting/">Project page</a>
+<i class="icon-book"></i><a href="http://www.sciencedirect.com/science/article/pii/S0097849317300675">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#HerholzUMG">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1016/j.cag.2017.05.018">DOI</a>
+</p>
+<p style="clear:both">
+Mass market digital manufacturing devices are severely limited in accuracy and material, resulting in a significant gap between the appearance of the virtual and the real shape. In imaging as well as rendering of shapes, it is common to enhance features so that they are more apparent. We provide an approach for feature enhancement that directly operates on the geometry of a given shape, with particular focus on improving the visual appearance for 3D printing. The technique is based on unsharp masking, modified to handle arbitrary free-form geometry in a stable, efficient way, without causing large scale deformation. On a series of manufactured shapes we show how features are lost as size of the object decreases, and how our technique can compensate for this. We evaluate this effect in a human subject experiment and find significant preference for modified geometry.
+</p>
+</div> <!-- span9 -->
+</div> <!-- row -->    
+    
+    
+    
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/eg2017.jpg" alt="Diffusion Diagrams"/>
+</div>
+<div class="span9">
+<h4>Diffusion Diagrams:
+Voronoi Cells and Centroids from Diffusion <small> EUROGRAPHICS 2017</small></h4>
+<p class="pull-left">
+Philipp Herholz, Felix Haase and <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a>
+<br/>
+<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/">Project page</a>
+<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/files/HerholzEG2017.pdf">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#HerholzDD">BibTeX</a>
+<i class="icon-film"></i><a href="https://youtu.be/t4Y6aYTQVKk">Movie</a>
+<i class="icon-download"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/files/ddeg.key.pdf">Slides</a>
+<i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.13116">DOI</a>
+</p>
+<p style="clear:both">
+We define Voronoi cells and centroids based on heat diffusion. These heat cells and heat centroids coincide with the common definitions in Euclidean spaces. On curved surfaces they compare favorably with definitions based on geodesics: they are smooth and can be computed in a stable way with a single linear solve. We analyze the numerics of this approach and can show that diffusion diagrams converge quadratically against the smooth case under mesh refinement, which is better than other common discretization of distance measures in curved spaces. By factorizing the system matrix in a preprocess, computing Voronoi diagrams or centroids amounts to just back-substitution. We show how to localize this operation so that the complexity is linear in the size of the cells and not the underlying mesh. We provide several example applications that show how to benefit from this approach.   
+</p>
+</div> <!-- span9 -->
+</div> <!-- row -->
+
+<div class="row">
+<div class="span12">
+<h3>2015</h3>
+</div>
+</div>
+  
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/eg2015.jpg" alt="Approximating Free-form Geometry with Height Fields for Manufacturing"/>
+</div>
+<div class="span9">
+<h4>Approximating Free-form Geometry with Height Fields for Manufacturing <small>EUROGRAPHICS 2015</small></h4>
+<p>Philipp Herholz, 
+<a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a> and
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2015/">Project page</a>
+<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2015/files/HerholzEG2015.pdf">PDF</a>
+<i class="icon-download"></i><a href="">Slides</a>
+<i class="icon-film"></i><a href="https://youtu.be/sqSkZzOtiI0">Movie</a>
+<i class="icon-bold"></i><a href="bibtex.html#HerholzAGH">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.12556">DOI</a>
+</p>
+<p>
+We consider the problem of manufacturing free-form geometry with classical manufacturing techniques, such as mold casting or 3-axis milling. We determine a set of constraints that are necessary for manufacturability and then decompose and, if necessary, deform the shape to satisfy the constraints per segment. We show that many objects can be generated from a small number of (mold-)pieces if some deformation is acceptable. We provide examples of actual molds and the resulting manufactured objects.</p>
+</div>
+ </div>
+
+    
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/sgp2015.jpg" alt="Approximating Free-form Geometry with Height Fields for Manufacturing"/>
+</div>
+
+<div class="span9">
+<h4>Perfect Laplacians for Polygon Meshes <small>Eurographics Symposium on Geometry Processing (SGP) 2015</small></h4>
+<p>Philipp Herholz, 
+<a href="http://www.kyprianidis.com">Jan Eric Kyprianidis</a> and
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
+<br/>
+<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SGP2015/">Project page</a>
+<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SGP2015/files/HerholzSGP2015.pdf">PDF</a>
+<i class="icon-download"></i><a href="http://cybertron.cg.tu-berlin.de/~philipp/SGP2015/files/perfectLaplace@SGP.pdf">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#HerholzPLP">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.12709">DOI</a>
+</p>
+<p>
+A discrete Laplace-Beltrami operator is called perfect if it possesses all the important properties of its smooth counterpart. It is known which triangle meshes admit perfect Laplace operators and how to fix any other mesh by changing the combinatorics. We extend the characterization of meshes that admit perfect Laplacians to general polygon meshes. More importantly, we provide an algorithm that computes a perfect Laplace operator for any polygon mesh without changing the combinatorics, although, possibly changing the embedding. We evaluate this algorithm and demonstrate it at applications.</div>
+ </div>    
+
+<div class="row">
+<div class="span12">
+<h3>2014</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/sig2014.jpg" alt="Turning free-form surfaces into manufacturable components"/>
+</div>
+
+<div class="span9">
+<h4>Turning free-form surfaces into manufacturable components <small>ACM SIGGRAPH Talks</small></h4>
+<p>Philipp Herholz, 
+<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> and
+<a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a>
+<br/>
+<i class="icon-download"></i><a href="">Slides</a>
+<i class="icon-bold"></i><a href="bibtex.html#HerholzTFS">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1145/2619195.2656295">DOI</a>
+   
+</p>
+<p>
+We consider the problem of manufacturing free-form geometry with classical fabrication techniques such as mold casting or milling. We derive a set of constraints that guarantee manufacturability. A combined deformation and segmentation algorithm yields parts that satisfy the constraints. Our main observation is that allowing some deformation significantly reduces the number of resulting parts and, thus, extends the range of shapes that can be generated in practice. Examples of actual molds and the resulting manufactured shapes for several well-known meshes demonstrate our claims.
+</p>
+</div> <!-- span9 -->
+</div> <!-- row -->	
+
+<hr/>
+
+<div class="row">
+<div class="span12">
+<h2 id="professional">Professional Activity</h2>
+
+
+
+<h3>Program Committees</h3>
+Siggraph 2021, 2022<br/>
+Graphics Interface 2020, 2021<br/>
+Symposium on Geometry Processing 2020, 2021, 2022<br/>
+Pacific Graphics 2020, 2021<br/>
+	</div> <!-- span12 -->
+</div> <!-- row --> 
+<hr/>
+
+
+<footer class="footer" id="contact">
+<p class="pull-right"><a href="#">Back to top</a></p>
+<p>Contact: lastname [at] fb.com</p>
+</footer>
+
+</div> <!-- container -->
+</body>
 </html>
