@@ -80,11 +80,38 @@ padding-top: 60px; /* 60px to make the container go all the way to the bottom of
 
 
 
+<div id="videoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center;">
+    <div style="position:relative; width:90%; max-width:900px; aspect-ratio:16/9;">
+        <span onclick="closeVideo()" style="position:absolute; top:-40px; right:0; color:white; font-size:35px; cursor:pointer; font-family:sans-serif;">&times; Schliessen</span>
+        <iframe id="ytPlayer" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('ytPlayer');
+
+    // Funktion, die die Video-ID übernimmt
+    function openVideo(videoId) {
+        player.src = "https://www.youtube.com" + videoId + "?autoplay=1&rel=0";
+        modal.style.display = 'flex';
+    }
+
+    function closeVideo() {
+        modal.style.display = 'none';
+        player.src = ""; // Stoppt das Video sofort
+    }
+
+    // Schliessen bei Klick ins Dunkle
+    window.onclick = function(event) {
+        if (event.target == modal) { closeVideo(); }
+    }
+</script>
+
+
 <div class="row">
 <div class="span12">
 <h2 id="publications">Publications</h2>
-
-
 
 
 
@@ -152,7 +179,8 @@ With Real-Time Shell And Contact Simulation"/>
 Philipp Herholz
 
 <br/>
-<i class="icon-film"></i><a href="https://youtu.be/iduwChZSgcs?si=WPtU2IN0SqzQQ7rc">Video</a>
+
+<i class="icon-film"></i><a href="javascript:void(0)" onclick="openVideo('iduwChZSgcs')">Video</a>
 <i class="icon-book"></i><a href="https://animation.rwth-aachen.de/media/papers/95/2025-PACMCGIT-Facial_Animation.pdf">PDF</a>
 <i class="icon-bold"></i><a href="bibtex.html#Fernandez2025">BibTeX</a>
 </p>
