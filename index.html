@@ -84,16 +84,217 @@ padding-top: 60px; /* 60px to make the container go all the way to the bottom of
 <div class="span12">
 <h2 id="publications">Publications</h2>
 
+
+
+
+
 <div class="row">
 <div class="span12">
-<h3>2023</h3>
+
+<h3>2026</h3>
 </div>
 </div>
 
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/eg2023.jpg" alt="Designing Personalized Garments with Body Movement"/>
+<img class="hidden-phone" src="figures/EG2026.jpg" alt="SkinCells"/>
+</div>
+
+<div class="span9">
+<h4>SkinCells: Sparse Skinning using Voronoi Cells <small>Eurographics 2026</small></h4>
+<p>
+Egor Larionov,
+Igor Santesteban,
+Hsiao-yu Chen, 
+Gene Lin, 
+Philipp Herholz,
+<a href="https://rgoldade.github.io">Ryan Goldade,</a>
+<a href="https://users.cs.utah.edu/~ladislav/">Ladislav Kavan,</a>
+Doug Roble,
+<a href="https://tuurstuyck.github.io">Tuur Stuyck</a>
+
+<br/>
+<i class="icon-book"></i><a href="https://arxiv.org/abs/2506.14714">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#Larionov2026">BibTeX</a>
+</p>
+<p>For decades, real-time skinning has been the cornerstone of character animation in visual effects and games. Despite its importance, the creation of animatable digital assets remains a labor-intensive manual process. Existing automated tools frequently struggle with intricate geometries, often necessitating significant manual refinement to reach production standards. We present a robust, fully automated method for generating high-quality skinning weights from a standard mesh and skeleton in a canonical A- or T-pose. Unlike traditional approaches, our framework offers direct sparsity controls to limit bone influences per vertex -- a critical requirement for maintaining performance in large-scale mobile environments. Furthermore, we address the challenge of Level-of-Detail (LoD) management by optimizing weights within a continuous spatial volume rather than on discrete vertices. This allows a single optimization pass to be applied seamlessly across multiple asset resolutions and variations. Central to our approach is a novel parameterized family of functions, we call SkinCells. We demonstrate that our method consistently produces stable, high-quality results even in complex scenarios where standard biharmonic weight computations fail.</p>  
+</div>       
+</div> 
+
+
+
+
+<div class="row">
+<div class="span12">
+
+
+<h3>2025</h3>
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SCA2025.jpg" alt="Interactive Facial Animation: Enhancing Facial Rigs
+With Real-Time Shell And Contact Simulation"/>
+</div>
+
+<div class="span9">
+<h4>Interactive Facial Animation:</br>Enhancing Facial Rigs With Real-Time Shell And Contact Simulation <small>SCA 2025</small></h4>
+<p>
+<a href="https://animation.rwth-aachen.de/person/48/">José Antonio Fernández-Fernández,</a>
+<a href="https://rgoldade.github.io">Ryan Goldade,</a>, 
+<a href="https://users.cs.utah.edu/~ladislav/">Ladislav Kavan,</a>
+<a href="https://animation.rwth-aachen.de/person/1/">Jan Bender,</a>
+Philipp Herholz
+
+<br/>
+<i class="icon-film"></i><a href="https://youtu.be/iduwChZSgcs?si=WPtU2IN0SqzQQ7rc">Video</a>
+<i class="icon-book"></i><a href="https://animation.rwth-aachen.de/media/papers/95/2025-PACMCGIT-Facial_Animation.pdf">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#Fernandez2025">BibTeX</a>
+</p>
+<p>
+Demand for high-quality virtual 3D characters continues to grow in both entertainment and communication, and with it, the desire for interactive avatars. This presents unique challenges for high-fidelity interactive solutions that must be quick to set up, efficient to run in real-time on consumer hardware, and work well, not only on human characters, but also on fantastical and heavily stylized ones.  We present Interactive Facial Animation (IFA), a novel approach to augment facial animation rigs with shell simulation and contact without requiring anatomical priors or artist intervention. Our method uses an efficient shell model that tracks the output of a face rig in real-time and incorporates realistic contact. By designing our shell model to be differentiable, we can use inverse simulation to reconstruct realistic non-uniform stiffness that captures both stiff (ears, nose) and soft (cheeks, lips) areas, based on the rig’s deformation space. The reconstruction process imposes hard limits on acceptable errors, which ensures that IFA preserves the resolution and expressiveness of the source material, a common shortcoming in many face simulation pipelines. With performance in mind, we demonstrate IFA using a variant of the Fast Mass-Springs method. However, the presented concept can be realized with any differentiable physics solver that provides reliable convergence.  We showcase our method in four different character rigs, achieving simulation update runtimes between 0.39 and 1.27 milliseconds (787-2564 FPS) on a single CPU thread. Unlike existing methods that require lengthy preparation times, our pipeline can be ready to use within minutes, also on the CPU.
+</p>  
+</div>       
+</div> 
+
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SIGGRAPH2025.jpg" alt="TetWeave"/>
+</div>
+
+<div class="span9">
+<h4>TetWeave: Isosurface Extraction using On-The-Fly Delaunay Tetrahedral Grids </br> for Gradient-Based Mesh Optimization <small>SIGGRAPH 2025</small></h4>
+<p>
+<a href="https://igl.ethz.ch/people/">Alexandre Binninger</a>, 
+<a href="https://rubenwiersma.nl">Ruben Wiersma</a>
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
+
+<br/>
+
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/tetweave/"> Project page</a>
+<i class="icon-film"></i><a href="https://youtu.be/AfRNWszvbKI?si=85bxiPDTM3_a-b7D"> Video</a>
+<i class="icon-book"></i><a href="https://igl.ethz.ch/projects/tetweave/TetWeave_SIGGRAPH_2025.pdf"> PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#Binninger2025"> BibTeX</a>
+</p>
+<p>
+We introduce TetWeave, a novel isosurface representation for gradient-based mesh optimization that jointly optimizes the placement of a tetrahedral grid used for Marching Tetrahedra and a novel directional signed distance at each point. TetWeave constructs tetrahedral grids on-the-fly via Delaunay triangulation, enabling increased flexibility compared to predefined grids. The extracted meshes are guaranteed to be watertight, two-manifold and intersection-free. The flexibility of TetWeave enables a resampling strategy that places new points where reconstruction error is high and allows to encourage mesh fairness without compromising on reconstruction error. This leads to high-quality, adaptive meshes that require minimal memory usage and few parameters to optimize. Consequently, TetWeave exhibits near-linear memory scaling relative to the vertex count of the output mesh — a substantial improvement over predefined grids. We demonstrate the applicability of TetWeave to a broad range of challenging tasks in computer graphics and vision, such as multi-view 3D reconstruction, mesh compression and geometric texture generation.
+</p>  
+</div>       
+</div> 
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/JCGT2025.jpg" alt="Higher-Order Continuity for Smooth As-Rigid-As-Possible Shape Modeling"/>
+</div>
+
+<div class="span9">
+<h4>Higher-Order Continuity for Smooth As-Rigid-As-Possible Shape Modeling <small>Journal of CG Techniques</small></h4>
+<p>
+<a href="https://oehria.github.io">Annika Oehri,</a>
+Philipp Herholz,
+<a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
+
+<br/>
+
+<i class="icon-home"></i><a href="https://igl.ethz.ch/projects/smootharap/">Project page</a>
+<i class="icon-book"></i><a href="https://jcgt.org/published/0014/01/10/paper.pdf">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#Oehri2025">BibTeX</a>
+</p>
+<p>
+We propose a modification of the As-Rigid-As-Possible (ARAP) mesh deformation energy with higher order smoothness, which overcomes a prominent limitation of the original ARAP formulation: spikes and lack of continuity at the manipulation handles. Our method avoids spikes even when using single-point positional constraints. Since no explicit rotations have to be specified, the user interaction can be realized through a simple click-and-drag interface, where points on the mesh can be selected and moved around while the rest of the mesh surface automatically deforms accordingly. Our method preserves the benefits of ARAP deformations: it is easy to implement and thus useful for practical applications, while its efficiency makes it usable in real-time, interactive scenarios on detailed models.
+</p>  
+</div>       
+</div> 
+
+
+<div class="row">
+<div class="span12">
+
+<h3>2024</h3>
+</div>
+</div>
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/SIGGRAPH2024.jpg" alt="A Mesh-based Simulation Framework using Automatic Code Generation"/>
+</div>
+
+<div class="span9">
+<h4>A Mesh-based Simulation Framework using Automatic Code Generation <small>SIGGRAPH 2024</small></h4>
+<p>
+Philipp Herholz,
+<a href="https://tuurstuyck.github.io">Tuur Stuyck,</a>
+<a href="https://users.cs.utah.edu/~ladislav/">Ladislav Kavan</a>
+
+<br/>
+<i class="icon-book"></i><a href="https://dl.acm.org/doi/10.1145/3687986">PDF</a>
+<i class="icon-bold"></i><a href="bibtex.html#Herholz2024">BibTeX</a>
+<i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/368798">DOI</a>
+</p>
+<p>Optimized parallel implementations on GPU or CPU have dramatically enhanced the fidelity, resolution and accuracy of physical simulations and
+mesh-based algorithms. However, attaining optimal performance requires
+expert knowledge and might demand complex code and memory layout optimizations. This adds to the fact that physical simulation algorithms require
+the implementation of derivatives, which can be a tedious and error-prone
+process. In recent years, researchers and practitioners have investigated the
+concept of designing systems that allow for a more expressive definition
+of mesh-based simulation code. These systems leverage domain-specific
+languages (DSL), automatic differentiation or symbolic computing to enhance readability of implementations without compromising performance.
+We follow this line of work and propose a symbolic code generation approach tailored to mesh-based computations on parallel devices. Our system
+extends related work by incorporating collision handling and a data access
+synchronization approach, enabling rapid sparse matrix assembly.</p>  
+</div>       
+</div> 
+
+<div class="row">
+<div class="span12">
+
+<h3>2023</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/PhysGraph.jpg" alt="PhysGraph: Physics-Based Cloth Enhancement Using Graph Neural Networks"/>
+</div>
+
+<div class="span9">
+<h4>PhysGraph: Physics-Based Cloth Enhancement Using Graph Neural Networks <small>ArXiv</small></h4>
+<p>
+Oshri Halimi,
+Egor Larionov,
+Zohar Barzelay,
+Philipp Herholz,
+<a href="https://tuurstuyck.github.io">Tuur Stuyck</a>
+
+<br/>
+<i class="icon-book"></i><a href="https://arxiv.org/abs/2301.11841">PDF</a>
+<i class="icon-film"></i><a href="https://www.youtube.com/watch?v=s8ZFvdQdMBc">Video</a>
+<i class="icon-bold"></i><a href="bibtex.html#Halimi2023">BibTeX</a>
+</p>
+<p>PhysGraph leverages a recurrent graph neural network in order to minimize user-provided energy potentials in a topology- and
+force-independent way. We demonstrate our method on enhancing coarse resolution cloth geometry with physics-based high resolution
+detail. The figure shows the coarse geometry on the left and the enhanced output on the right. Our method is capable of handling body
+and self collisions as well as the elastic potentials of cloth. By explicitly separating the force modeling and the integration process, we
+obtain high generalization power. The method is trained on local patches with only forces resulting from the garment elastic potential. We
+show several examples to demonstrate that our method allows to modify material properties and collision geometry during inference, all
+leveraging a single model trained on only a limited number of potentials.</p>  
+</div>       
+</div> 
+
+
+<div class="row">
+<div class="span3">
+<img class="hidden-phone" src="figures/EG2023.jpg" alt="Designing Personalized Garments with Body Movement"/>
 </div>
 
 <div class="span9">
@@ -120,13 +321,15 @@ The standardized sizes used in the garment industry do not cover the range of in
 
 <div class="row">
 <div class="span12">
+
+
 <h3>2022</h3>
 </div>
 </div>
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sig2022a.jpg" alt="Sparsity-Specific Code Optimization using Expression Trees"/>
+<img class="hidden-phone" src="figures/SIGGRAPH_2022_b.jpg" alt="Sparsity-Specific Code Optimization using Expression Trees"/>
 </div>
 
 <div class="span9">
@@ -164,7 +367,7 @@ with applications to physical simulation and interactive mesh deformation.</p>
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sig2022b.jpg" alt="Variational Quadratic Shape Functions for Polygons and Polyhedra"/>
+<img class="hidden-phone" src="figures/SIGGRAPH2022.jpg" alt="Variational Quadratic Shape Functions for Polygons and Polyhedra"/>
 </div>
 
 <div class="span9">
@@ -231,7 +434,7 @@ Approximating 3D shapes with piecewise developable surfaces is an active researc
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/SigAsia2020a.jpg" alt="Shape Approximation by Developable Wrapping"/>
+<img class="hidden-phone" src="figures/SigAsia2020_b.jpg" alt="Sparse Cholesky Updates for Interactive Mesh Parameterization "/>
 </div>
 
 <div class="span9">
@@ -253,7 +456,7 @@ We present a novel linear solver for interactive parameterization tasks. Our met
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/SigAsia2020b.jpg" alt="Shape Approximation by Developable Wrapping"/>
+<img class="hidden-phone" src="figures/SigAsia2020.jpg" alt="Shape Approximation by Developable Wrapping"/>
 </div>
 
 <div class="span9">
@@ -277,7 +480,7 @@ We present an automatic tool to approximate curved geometries with piecewise dev
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sgp2020.png" alt="Properties of Laplace Operators for Tetrahedral Meshes"/>
+<img class="hidden-phone" src="figures/SGP2020.jpg" alt="Properties of Laplace Operators for Tetrahedral Meshes"/>
 </div>
 
 <div class="span9">
@@ -302,7 +505,7 @@ Discrete Laplacians for triangle meshes are a fundamental tool in geometry proce
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/eg2020.jpg" alt="Polygon Laplacian Made Simple"/>
+<img class="hidden-phone" src="figures/EG2020.jpg" alt="Polygon Laplacian Made Simple"/>
 </div>
 
 <div class="span9">
@@ -332,7 +535,7 @@ The discrete Laplace-Beltrami operator for surface meshes is a fundamental build
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/vmv2019.jpg" alt="Reﬂection Symmetry in Textured Sewing Patterns"/>
+<img class="hidden-phone" src="figures/VMV2019.jpg" alt="Reﬂection Symmetry in Textured Sewing Patterns"/>
 </div>
 
 <div class="span9">
@@ -358,7 +561,7 @@ Recent work in the area of digital fabrication of clothes focuses on repetitive 
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/eg2019.jpg" alt="Efficient Computation of Smoothed Exponential Maps"/>
+<img class="hidden-phone" src="figures/HerholzEG2019.jpg" alt="Efficient Computation of Smoothed Exponential Maps"/>
 </div>
 
 <div class="span9">
@@ -381,7 +584,7 @@ Many applications in geometry processing require the computation of local parame
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/chi2019.jpg" alt="Understanding Metamaterial Mechanisms"/>
+<img class="hidden-phone" src="figures/CHI2019.jpg" alt="Understanding Metamaterial Mechanisms"/>
 </div>
 
 <div class="span9">
@@ -413,7 +616,7 @@ In this paper, we establish the underlying foundations of mechanisms that are co
     
  <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sigAsia2018.jpg" alt="Factor Once: Reusing Cholesky Factorizations on Sub-Meshes"/>
+<img class="hidden-phone" src="figures/HerholzSigAsia2018.jpg" alt="Factor Once: Reusing Cholesky Factorizations on Sub-Meshes"/>
 </div>
 
 <div class="span9">
@@ -435,7 +638,7 @@ A common operation in geometry processing is solving symmetric and positive semi
     
   <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/chi2018.jpg" alt="Optispace"/>
+<img class="hidden-phone" src="figures/CHI2018.jpg" alt="Optispace"/>
 </div>
     
 <div class="span9">
@@ -464,7 +667,7 @@ We present OptiSpace, a system for the automated placement of perspectively corr
 
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sigAsia.jpg" alt="Localized solutions of sparse linear systems for geometry processing"/>
+<img class="hidden-phone" src="figures/SIGGRAPH_ASIA2017.jpg" alt="Localized solutions of sparse linear systems for geometry processing"/>
 </div>
 
 <div class="span9">
@@ -473,8 +676,6 @@ We present OptiSpace, a system for the automated placement of perspectively corr
 <a href="http://faculty.cse.tamu.edu/davis/welcome.html">Timothy A. Davis</a> and
 <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
 <br/>
-<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SigAsia2017/">Project page</a>
-<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SigAsia2017/files/HerholzSigAsia2017.pdf">PDF</a>
 <i class="icon-download"></i><a href="">Slides</a>
 <i class="icon-bold"></i><a href="bibtex.html#Herholzlgp">BibTeX</a>
 <i class="icon-chevron-right"></i><a href="https://doi.org/10.1145/3130800.3130849">DOI</a>
@@ -487,7 +688,7 @@ Computing solutions to linear systems is a fundamental building block of many ge
     
   <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/uist2017.jpg" alt="Unsharp Masking Geometry Improves 3D Prints"/>
+<img class="hidden-phone" src="figures/UIST2017.jpg" alt="HeatSpace: Automatic Placement of Displays by Empirical Analysis of User Behavior"/>
 </div>
     
 <div class="span9">
@@ -512,7 +713,7 @@ We present HeatSpace, a system that records and empirically analyzes user behavi
     
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/smi2017.jpg" alt="Unsharp Masking Geometry Improves 3D Prints"/>
+<img class="hidden-phone" src="figures/SMI2017.jpg" alt="Unsharp Masking Geometry Improves 3D Prints"/>
 </div>
 <div class="span9">
 <h4>Unsharp Masking Geometry Improves 3D Prints <small> Shape Modeling International (SMI) 2017</small></h4>
@@ -544,11 +745,8 @@ Voronoi Cells and Centroids from Diffusion <small> EUROGRAPHICS 2017</small></h4
 <p class="pull-left">
 Philipp Herholz, Felix Haase and <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a>
 <br/>
-<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/">Project page</a>
-<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/files/HerholzEG2017.pdf">PDF</a>
 <i class="icon-bold"></i><a href="bibtex.html#HerholzDD">BibTeX</a>
 <i class="icon-film"></i><a href="https://youtu.be/t4Y6aYTQVKk">Movie</a>
-<i class="icon-download"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2017/files/ddeg.key.pdf">Slides</a>
 <i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.13116">DOI</a>
 </p>
 <p style="clear:both">
@@ -565,7 +763,7 @@ We define Voronoi cells and centroids based on heat diffusion. These heat cells 
   
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/eg2015.jpg" alt="Approximating Free-form Geometry with Height Fields for Manufacturing"/>
+<img class="hidden-phone" src="figures/EG2015.jpg" alt="Approximating Free-form Geometry with Height Fields for Manufacturing"/>
 </div>
 <div class="span9">
 <h4>Approximating Free-form Geometry with Height Fields for Manufacturing <small>EUROGRAPHICS 2015</small></h4>
@@ -573,9 +771,6 @@ We define Voronoi cells and centroids based on heat diffusion. These heat cells 
 <a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a> and
 <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
 <br/>
-<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2015/">Project page</a>
-<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/EG2015/files/HerholzEG2015.pdf">PDF</a>
-<i class="icon-download"></i><a href="">Slides</a>
 <i class="icon-film"></i><a href="https://youtu.be/sqSkZzOtiI0">Movie</a>
 <i class="icon-bold"></i><a href="bibtex.html#HerholzAGH">BibTeX</a>
 <i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.12556">DOI</a>
@@ -588,7 +783,7 @@ We consider the problem of manufacturing free-form geometry with classical manuf
     
 <div class="row">
 <div class="span3">
-<img class="hidden-phone" src="figures/sgp2015.jpg" alt="Approximating Free-form Geometry with Height Fields for Manufacturing"/>
+<img class="hidden-phone" src="figures/SGP2015.jpg" alt="Perfect Laplacians for Polygon Meshes"/>
 </div>
 
 <div class="span9">
@@ -597,9 +792,6 @@ We consider the problem of manufacturing free-form geometry with classical manuf
 <a href="http://www.kyprianidis.com">Jan Eric Kyprianidis</a> and
 <a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> 
 <br/>
-<i class="icon-home"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SGP2015/">Project page</a>
-<i class="icon-book"></i><a href="https://cybertron.cg.tu-berlin.de/~philipp/SGP2015/files/HerholzSGP2015.pdf">PDF</a>
-<i class="icon-download"></i><a href="http://cybertron.cg.tu-berlin.de/~philipp/SGP2015/files/perfectLaplace@SGP.pdf">Slides</a>
 <i class="icon-bold"></i><a href="bibtex.html#HerholzPLP">BibTeX</a>
 <i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1111/cgf.12709">DOI</a>
 </p>
@@ -607,39 +799,7 @@ We consider the problem of manufacturing free-form geometry with classical manuf
 A discrete Laplace-Beltrami operator is called perfect if it possesses all the important properties of its smooth counterpart. It is known which triangle meshes admit perfect Laplace operators and how to fix any other mesh by changing the combinatorics. We extend the characterization of meshes that admit perfect Laplacians to general polygon meshes. More importantly, we provide an algorithm that computes a perfect Laplace operator for any polygon mesh without changing the combinatorics, although, possibly changing the embedding. We evaluate this algorithm and demonstrate it at applications.</div>
  </div>    
  </div>
-<!--
-<div class="row">
-<div class="span12">
 
-
-
-<h3>2014</h3>
-</div>
-</div>
-
-<div class="row">
-<div class="span3">
-<img class="hidden-phone" src="figures/sig2014.jpg" alt="Turning free-form surfaces into manufacturable components"/>
-</div>
-
-<div class="span9">
-<h4>Turning free-form surfaces into manufacturable components <small>ACM SIGGRAPH Talks</small></h4>
-<p>Philipp Herholz, 
-<a href="http://www.cg.tu-berlin.de/team/prof-dr-marc-alexa/">Marc Alexa</a> and
-<a href="http://people.csail.mit.edu/wojciech/">Wojciech Matusik</a>
-<br/>
-<i class="icon-download"></i><a href="">Slides</a>
-<i class="icon-bold"></i><a href="bibtex.html#HerholzTFS">BibTeX</a>
-<i class="icon-chevron-right"></i><a href="http://dx.doi.org/10.1145/2619195.2656295">DOI</a>
-   
-</p>
-<p>
-We consider the problem of manufacturing free-form geometry with classical fabrication techniques such as mold casting or milling. We derive a set of constraints that guarantee manufacturability. A combined deformation and segmentation algorithm yields parts that satisfy the constraints. Our main observation is that allowing some deformation significantly reduces the number of resulting parts and, thus, extends the range of shapes that can be generated in practice. Examples of actual molds and the resulting manufactured shapes for several well-known meshes demonstrate our claims.
-</p>
-</div> 
-</div> 
-
--->
 
 <hr/>
 
@@ -658,10 +818,25 @@ Pacific Graphics 2020, 2021<br/>
 </div> <!-- row --> 
 <hr/>
 
-
 <footer class="footer" id="contact">
-<p class="pull-right"><a href="#">Back to top</a></p>
-<p>Contact: lastname@meta.com</p>
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  
+  <!-- Das fehlende Element, in das die E-Mail geschrieben wird -->
+  <p>E-Mail: <a href="#" id="email-link">wird geladen...</a></p>
+
+  <script>
+    (function() {
+      const user = "ph.herholz";
+      const domain = "gmail.com";
+      const element = document.getElementById("email-link");
+      
+      if (element) {
+        const fullEmail = user + "@" + domain;
+        element.href = "mailto:" + fullEmail;
+        element.textContent = fullEmail;
+      }
+    })();
+  </script>
 </footer>
 
 </div> <!-- container -->
